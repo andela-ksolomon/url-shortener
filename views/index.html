@@ -1,0 +1,78 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to UrlShortener</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <all>
+    <header>
+      <span class="heading">
+        URL<b>Shortener</b></span>
+    </header>
+
+    <main>
+      <center><span class="heading">
+        Shorten URL <b>For Free</b></span></center>
+      <form>
+        <center>
+        <input name="url" type="text" maxlength="100" placeholder="Type your url">
+        <button id="submit_button" type="submit">Submit</button>
+        <p id="error">please type in a valid url</p>
+        </center>
+      </form>
+      <section class="dreams">
+        <ul id="dreams">
+        </ul>
+        <table>
+<!--   <caption><u>Output</u></caption> -->
+  <thead>
+    <tr>
+      <th scope="col">Original URL</th>
+      <th scope="col">Shorten URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="original">
+        <i id="original_link">http://www.facebook.com</i>
+        <a class="links" id="original_button" href="" target="_blank"> Visit Link </a>
+      </td>
+      <td data-label="shorten">
+        <i id="short_link">http://www.facebook.com</i>
+        <a class="links" id="short_button" href="" target="_blank"> Visit Link </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+      </section>
+    </main>
+
+    <footer>
+      <span>
+        URLShortener Microservice - A Fullstack Javascript Application... Project by  <a href="http://github.com/maximuf">Solomon Kingsley</a>
+      </span>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  </all>
+  </body>
+</html>
