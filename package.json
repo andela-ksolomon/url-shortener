@@ -13,7 +13,7 @@
     "express": "^4.15.3",
     "mongodb": "^2.2.31",
     "body-parser": "^1.17.2",
-    "mongoose": "^4.11.9"
+    "mongoose": "^5.9.11"
   },
   "engines": {
     "node": "8.x"
